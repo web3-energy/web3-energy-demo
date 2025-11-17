@@ -98,12 +98,12 @@ Go to https://web3-energy.com and sign in using any Google account.
 ### 2️⃣ Frontend: Create a Charge Point
 Click the “+” button and follow the creation wizard.  
 When finished, you’ll see your new Charge Point (initially OFFLINE).
-![img.png](img.png)
+![img.png](images/img.png)
 ---
 
 ### 3️⃣ Terminal: Capture the Charge Point ID
 Open the Charge Point details and copy the cpId.  
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 Set it as an environment variable:
 
     export CP_ID="cp-test-000"
@@ -124,7 +124,7 @@ Option B — set a completely different mnemonic in w3cp-chargepoint/src/main/re
 ### 5️⃣ Frontend: Arm Identity Discovery
 Open the Identity tab and press “Arm Discovery”.  
 This allows the next CP connection to broadcast its identities one time.
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 ---
 
 ### 6️⃣ Terminal: Start the Charge Point emulator
@@ -133,7 +133,7 @@ With CP_ID set, start the emulator in dev mode:
     ./gradlew quarkusDev
 
 It will connect to the backend and immediately broadcast its identities.
-![img_9.png](img_9.png)
+![img_9.png](images/img_9.png)
 
 You can also edit the config directly in **`w3cp-chargepoint/src/main/resources/application.yml`**.
 ---
@@ -141,31 +141,31 @@ You can also edit the config directly in **`w3cp-chargepoint/src/main/resources/
 ### 7️⃣ Frontend: Observe Identity Discovery
 You will see the armed discovery consumed.  
 The detected identities now show up under the Identity tab.
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 ---
 
 ### 8️⃣ Frontend: Accept & Activate the Polkadot Identity
 Approve the discovered Polkadot identity.  
 After activation, the Charge Point should come ONLINE using that identity. It will automatically connect, just give it a few seconds.
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 
 In a couple of seconds you should see:
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 ---
 
 ### 9️⃣ Frontend: Perform the Polkadot “Lift”
 Now that the CP is authenticated with its Polkadot DID, you can lift it on-chain.  
 Click “Lift Identity on Chain”.
-![img_6.png](img_6.png)
+![img_6.png](images/img_6.png)
 
 Lifting ...
-![img_7.png](img_7.png)
+![img_7.png](images/img_7.png)
 ---
 
 ### 🔟 Frontend: View the Attestation Record
 After a few seconds, you should see a Success message.  
 The attestation record includes a direct link to Subscan showing the live extrinsic.
-![img_8.png](img_8.png)
+![img_8.png](images/img_8.png)
 ---
 
 ### 1️⃣1️⃣ Frontend: Done
