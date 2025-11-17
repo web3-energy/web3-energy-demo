@@ -64,7 +64,7 @@ It is responsible for:
 - Ensuring no duplicate lifts  
 - Handling reconnects and chain availability
 
-### 3. W3CP Protocol (0.8.4) used can be found here: https://github.com/web3-energy/w3cp
+### Note: W3CP Protocol was used for chargepoint to backend communication: https://github.com/web3-energy/w3cp
 
 **Use Case**
 
