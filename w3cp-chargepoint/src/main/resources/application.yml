@@ -1,0 +1,33 @@
+quarkus:
+  http:
+    port: 8081
+
+w3cp:
+  backend:
+    websocket:
+      url: "wss://w3cp.web3-energy.com/w3cp"
+  identity:
+    bare-key:
+      type: "ecP256"
+      private-key: "MIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQggnYZknymepLRWvdXTg8gJgXcu9ux3PfGKsfvQ5ybyhWhRANCAAS1IhzITXCKYJphZeigueNfE9P5FDIbqQxVQDtX3lVx1oZT_ZPtP_JCvOxZn88JNlLBDhmbsa6nIoMG93-1aOlf"
+      public-key: "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEtSIcyE1wimCaYWXooLnjXxPT-RQyG6kMVUA7V95VcdaGU_2T7T_yQrzsWZ_PCTZSwQ4Zm7GupyKDBvd_tWjpXw"
+    kilt:
+      mnemonic: "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about"
+      passphrase: "change-me"
+      kid: "#key-1"
+    polkadot:
+      mnemonic: "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about about"
+      passphrase: "${CP_POLKADOT_PASS:change-me-pls}"
+      kid: "#key-1"
+  cp:
+    cp-id: "${CP_ID:cp-default}"
+    identity-type: "polkadot"  # "bare-key", "kilt", or "polkadot"
+    evses:
+      - evse-id: "EVSE-1"
+        feeder:
+          type: "dummy-static"
+          source: null
+      - evse-id: "EVSE-2"
+        feeder:
+          type: "dummy-static"
+          source: null

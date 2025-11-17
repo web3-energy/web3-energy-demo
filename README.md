@@ -133,7 +133,9 @@ With CP_ID set, start the emulator in dev mode:
     ./gradlew quarkusDev
 
 It will connect to the backend and immediately broadcast its identities.
+![img_9.png](img_9.png)
 
+You can also edit the config directly in **`w3cp-chargepoint/src/main/resources/application.yml`**.
 ---
 
 ### 7️⃣ Frontend: Observe Identity Discovery

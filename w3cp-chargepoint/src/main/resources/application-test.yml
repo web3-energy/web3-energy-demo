@@ -1,0 +1,8 @@
+quarkus:
+  http:
+    port: 8081
+
+w3cp:
+  backend:
+    websocket:
+      url: "ws://localhost:8080/w3cp"
