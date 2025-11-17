@@ -139,25 +139,31 @@ It will connect to the backend and immediately broadcast its identities.
 ### 7️⃣ Frontend: Observe Identity Discovery
 You will see the armed discovery consumed.  
 The detected identities now show up under the Identity tab.
-
+![img_3.png](img_3.png)
 ---
 
 ### 8️⃣ Frontend: Accept & Activate the Polkadot Identity
 Approve the discovered Polkadot identity.  
 After activation, the Charge Point should come ONLINE using that identity. It will automatically connect, just give it a few seconds.
+![img_4.png](img_4.png)
 
+In a couple of seconds you should see:
+![img_5.png](img_5.png)
 ---
 
 ### 9️⃣ Frontend: Perform the Polkadot “Lift”
 Now that the CP is authenticated with its Polkadot DID, you can lift it on-chain.  
 Click “Lift Identity on Chain”.
+![img_6.png](img_6.png)
 
+Lifting ...
+![img_7.png](img_7.png)
 ---
 
 ### 🔟 Frontend: View the Attestation Record
 After a few seconds, you should see a Success message.  
 The attestation record includes a direct link to Subscan showing the live extrinsic.
-
+![img_8.png](img_8.png)
 ---
 
 ### 1️⃣1️⃣ Frontend: Done
