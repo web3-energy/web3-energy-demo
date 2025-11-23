@@ -87,6 +87,8 @@ You need the following installed and available:
 - **Java 21** (required for the Charge Point emulator)
 - **Terminal access** (for setting environment variables)
 - **Internet connection** (the demo interacts with live AWS Deployment + Polkadot (Westend))
+- **W3CP 0.8.4 installed** Go to: https://github.com/web3-energy/w3cp and from directory: https://github.com/web3-energy/w3cp/tree/main/RC/reference/java execute the following:
+    ./gradlew publishToMavenLocal
 
 ---
 
