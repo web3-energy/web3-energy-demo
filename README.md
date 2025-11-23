@@ -135,7 +135,7 @@ This allows the next CP connection to broadcast its identities one time.
 ---
 
 ### 6️⃣ Terminal: Start the Charge Point emulator
-With CP_ID set, start the emulator in dev mode:
+With CP_ID set, start the emulator in dev mode (Important: ensure W3CP v0.8.4 is installed as described in the prerequisites above):
 
     ./gradlew quarkusDev
 
